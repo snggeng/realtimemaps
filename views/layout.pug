@@ -13,16 +13,16 @@ html
   body
     include partials/header
 
-    .container
+    .container-fluid
       include partials/flash
       block content
 
-    include partials/footer
+    //- include partials/footer
 
     script(src='/js/lib/jquery-3.1.1.min.js')
     script(src='/js/lib/bootstrap.min.js')
-    script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAXx_DEEWCz5qyu1vMlyKZ3BCxKZ23bzeU&callback=initMap')
     script(src='/js/main.js')
+    script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBKOdQMUP0BHC21c_ChK1TgUHXTQZ2orJM&callback=initMap')
 
     // Google Analytics: change UA-XXXXX-X to be your site's ID
     script.

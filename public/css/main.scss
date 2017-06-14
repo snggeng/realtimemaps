@@ -71,7 +71,16 @@ textarea {
 
 // Google map
 // -------------------------
-#map {
- height: 400px;
+html, body, .container-fluid, .row, #map {
+ height: 100%;
  width: 100%;
+}
+ #chat {
+   position: relative;
+   height: 100%;
+   width: 100%;
+ }
+
+#chat .chatInput {
+  position: absolute;
 }
