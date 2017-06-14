@@ -10,6 +10,8 @@ function locationSuccess (position) {
     position: current,
     map: map
   })
+
+  socket.emit('newUser', current)
 }
 
 function locationError () {
@@ -22,7 +24,8 @@ function initMap () {
 }
 
 $(document).ready(function () {
-  let socket = io.connect(window.location.href)
+  socket = io.connect(window.location.href)
+
   socket.on('broadcast', function (data) {
     console.log(data)
 
